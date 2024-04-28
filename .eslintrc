@@ -31,7 +31,7 @@
     "no-extra-boolean-cast": "warn",
     "prefer-const": "warn",
     "no-useless-catch": "warn",
-    "no-nested-ternary": "warn",
+    "no-nested-ternary": "error",
 
     /* import rules */
     "import/order": "off",
@@ -124,7 +124,10 @@
     "react/jsx-no-useless-fragment": "warn",
     "react/function-component-definition": [
       "warn",
-      { "namedComponents": "arrow-function" }
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
     ],
     "react/jsx-max-depth": ["off", { "max": 5 }],
     "react/destructuring-assignment": [
